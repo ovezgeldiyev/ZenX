@@ -421,12 +421,79 @@
 }
 .achieve {
     padding: 80px 0 150px;
+    position: relative;
+    &__bg { 
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        height: 100%;
+        max-width: 1440px;
+        pointer-events: none;
+        &-blur {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translate(-30%, 20%);
+            z-index: -1;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &Icon {
+        width: 14%;
+        position: absolute;
+        bottom: -3%;
+        right: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+    }
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        &-bg {
+            position: absolute;
+            width: calc(100% - 30px);
+            top: 50%;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(-55%);
+            img {
+                width: 100%;
+            }
+        }
         &-info {
             width: calc(45% - 20px);
+            max-width: 440px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+            padding-left: 40px;
+        }
+        &-col {
+            width: calc(50% - 10px);
+            max-width: 182px;
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px;
+            &:last-child {
+                padding: 0;
+ 
+            }
         }
         &-content {
             width: calc(55% - 20px);
@@ -439,9 +506,6 @@
         h2 {
             margin-bottom: 24px;
         }
-        p {
-          
-        }
     }
     &Item {
         display: flex;
@@ -453,6 +517,14 @@
         backdrop-filter: blur(24px);
         padding: 18px 18px 13px 20px;
         max-width: 182px;
+        margin-bottom: 22px;
+        font-family: $montserrat;
+        &.big {
+            margin-bottom: 32px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
         &__icon {
             width: 45px;
             display: flex;
@@ -465,6 +537,11 @@
         }
         h4 {
             margin-bottom: 8px;
+        }
+        p {
+            height: 48px;
+            overflow: hidden;
+            max-width: 135px;
         }
     }
 }
