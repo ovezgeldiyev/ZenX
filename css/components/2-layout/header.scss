@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   z-index: 10;
+  transition: .4s ease;
   &.sticky  {
    position: fixed;
    top: 0;
@@ -11,6 +12,10 @@
    width: 100%;
    animation-name: sticky;
    animation-duration: .4s;
+   background-color: #1E1C1A;
+  }
+  &.active {
+    background-color: #1E1C1A;
   }
   .auto__container {
     max-width: 1260px;
@@ -27,21 +32,38 @@
       font-size: 42px;
       line-height: 100%;
     }
+    &-buttons {
+      display: flex;
+      align-items: center;
+    }
     .button {
       padding: 14px 30px;
+      font-size: 16px;
     }
   }
 }
 // 1024px
 @mixin header-lg-xlg {
     .header {
-    
+      &__inner {
+
+      }
     }
 }
 // 540px
 @mixin header-xsm-sm {
     .header {
-    
+      &__inner {
+        &-logo {
+          font-size: 30px;
+        }
+        &-buttons {
+          .button {
+            display: none;
+          }
+        }
+
+      }
     }
 }
 @keyframes sticky {

@@ -12,37 +12,167 @@
 }
 // 1180px
 @include xlg-xxlg {
+    .auto__container {
+        padding: 0 30px;
+    }
+    h1 {
+        font-size: 65px;
+        line-height: 75.7%;
+    }
+    h2 {
+        font-size: 36px;
+        line-height: 40px;
+        &.big {
+            font-size: 40px;
+            line-height: 38px;
+        }
+    }
+    h4 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    h5 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
     @include hero-xlg-xxlg;
+    @include feature-xlg-xxlg;
+    @include intro-xlg-xxlg;
+    @include info-xlg-xxlg;
+    @include achieve-xlg-xxlg;
+
 }
 // 1024px
 @include lg-xlg {
     ::-webkit-scrollbar{
         display: none;
     }
+    @include header-lg-xlg;
+    @include nav-lg-xlg;
     @include hero-lg-xlg;
+    @include feature-lg-xlg;
+    @include intro-lg-xlg;
+    @include info-lg-xlg;
+    @include achieve-lg-xlg;
+
 }
 // 930px
 @include md-lg {
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 35px;
+        &.big {
+            font-size: 32px;
+            line-height: 30px;
+        }
+    }
+    h4 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    h5 {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    h6 {
+        font-size: 16px;
+        line-height: 24px;
+        &.sm {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+    p {
+        &.md {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    
+        &.big {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
     @include hero-md-lg;
+    @include feature-md-lg;
+    @include intro-md-lg;
+    @include info-md-lg;
+    @include achieve-md-lg;
+    @include footer-md-lg;
+
 }
 // 750px
 @include sm-md {
+    .auto__container {
+        padding: 0 20px;
+    }
+    .button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
     @include hero-sm-md;
+    @include feature-sm-md;
+    @include intro-sm-md;
+    @include info-sm-md;
+    @include achieve-sm-md;
+    @include footer-sm-md;
+
 }
 // 650px
 @include sm-md-extra {
     @include hero-sm-md-extra;
+    @include feature-sm-md-extra;
+    @include intro-sm-md-extra;
+    @include info-sm-md-extra;
+    @include achieve-sm-md-extra;
+    @include footer-sm-md-extra;
+
 }
 // 540px
 @include xsm-sm  {
+
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 25px;
+        line-height: 30px;
+        &.big {
+            font-size: 27px;
+            line-height: 25px;
+        }
+    }
+    h4 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .main {
+        padding-top: 66px;
+    }
+    @include header-xsm-sm;
+    @include nav-xsm-sm;
     @include hero-xsm-sm;
+    @include feature-xsm-sm;
+    @include footer-xsm-sm;
+
 }
 // 440px
 @include xxsm-xsm  {
     @include hero-xxsm-xsm;
+    @include intro-xxsm-xsm;
+    @include info-xxsm-xsm;
+    @include achieve-xxsm-xsm;
+    @include footer-xxsm-xsm;
+
 }
 // 390px
 @include xxxsm-xxsm  {
-    // @include hero-xxxsm-xxsm;
+    @include footer-xxxsm-xxsm;
 }
 
