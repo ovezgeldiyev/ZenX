@@ -27,6 +27,10 @@
             line-height: 38px;
         }
     }
+    h3 {
+        font-size: 30px;
+        line-height: 35px;
+    }
     h4 {
         font-size: 24px;
         line-height: 30px;
@@ -42,6 +46,7 @@
     @include intro-xlg-xxlg;
     @include info-xlg-xxlg;
     @include achieve-xlg-xxlg;
+    @include dash-xlg-xxlg;
 
 }
 // 1024px
@@ -70,6 +75,10 @@
             font-size: 32px;
             line-height: 30px;
         }
+    }
+    h3 {
+        font-size: 25px;
+        line-height: 30px;
     }
     h4 {
         font-size: 20px;
@@ -104,8 +113,13 @@
     @include intro-md-lg;
     @include info-md-lg;
     @include achieve-md-lg;
+    @include dash-md-lg;
     @include footer-md-lg;
 
+}
+// 840px
+@include md-lg-extra {
+    @include dash-md-lg-extra;
 }
 // 750px
 @include sm-md {
@@ -121,6 +135,7 @@
     @include intro-sm-md;
     @include info-sm-md;
     @include achieve-sm-md;
+    @include dash-sm-md;
     @include footer-sm-md;
 
 }
@@ -131,6 +146,7 @@
     @include intro-sm-md-extra;
     @include info-sm-md-extra;
     @include achieve-sm-md-extra;
+    @include dash-sm-md-extra;
     @include footer-sm-md-extra;
 
 }
@@ -159,6 +175,7 @@
     @include nav-xsm-sm;
     @include hero-xsm-sm;
     @include feature-xsm-sm;
+    @include dash-xsm-sm;
     @include footer-xsm-sm;
 
 }
@@ -168,6 +185,7 @@
     @include intro-xxsm-xsm;
     @include info-xxsm-xsm;
     @include achieve-xxsm-xsm;
+    @include dash-xxsm-xsm;
     @include footer-xxsm-xsm;
 
 }

@@ -152,6 +152,8 @@ p {
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background: linear-gradient(225deg, rgba(58, 52, 50, 0.7) 14.89%, rgba(40, 45, 48, 0.7) 85.85%);
+    cursor: pointer;
+    transition: .3s ease;
     &:hover {
         opacity: 1;
         color: #EFE163;
@@ -208,5 +210,4 @@ p {
 }
 .frame {
     background: radial-gradient(82.87% 517.52% at 17.05% 65.16%, rgba(37, 76, 88, 0.91) 0%, rgba(84, 50, 39, 0.91) 100%);
-
 }
