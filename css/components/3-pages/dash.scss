@@ -5,12 +5,15 @@
     .auto__container {
         max-width: 1280px;
     }
+
     &.big {
         padding: 50px 0 130px;
+
         .auto__container {
             max-width: 1450px;
-        } 
+        }
     }
+
     &__inner {
         &-status {
             display: flex;
@@ -22,18 +25,23 @@
             border-radius: 16px;
             margin-bottom: 32px;
         }
+
         &-main {
             display: flex;
             justify-content: space-between;
+
             .dashItem {
                 width: 100%;
                 min-height: 160px;
+
                 &:nth-child(n) {
                     margin: 0 0 13px;
                 }
+
                 &:last-child {
                     margin: 0;
                 }
+
                 &__row {
                     width: 30%;
                     max-width: 418px;
@@ -41,6 +49,7 @@
                 }
             }
         }
+
         &-header {
             text-align: center;
             max-width: 630px;
@@ -65,6 +74,7 @@
                 align-items: center;
                 justify-content: center;
                 margin-bottom: 46px;
+
                 .button {
                     padding: 8px 14px;
                     font-size: 13px;
@@ -78,6 +88,7 @@
                     border-top-right-radius: 0;
                     border-bottom-right-radius: 0;
                     position: relative;
+
                     &::before {
                         position: absolute;
                         content: "";
@@ -93,51 +104,62 @@
                         border-top-right-radius: 0;
                         border-bottom-right-radius: 0;
                     }
+
                     &.active {
                         border-color: rgba(255, 255, 255, 0.3);
+
                         &::before {
                             opacity: 1;
                         }
                     }
+
                     &:hover {
                         border-color: rgba(255, 255, 255, 0.3);
+
                         &::before {
                             opacity: 1;
                         }
                     }
+
                     &:last-child {
                         border-radius: 4px;
                         border-top-left-radius: 0;
                         border-bottom-left-radius: 0;
+
                         &::before {
                             border-radius: 4px;
                             border-top-left-radius: 0;
                             border-bottom-left-radius: 0;
                         }
                     }
+
                     span {
                         position: relative;
                     }
                 }
             }
+
             &-connect {
                 border-radius: 20px;
                 padding: 32px 24px 24px;
                 background: radial-gradient(82.87% 517.52% at 17.05% 65.16%, rgba(37, 76, 88, 0.91) 0%, rgba(84, 50, 39, 0.91) 100%);
                 backdrop-filter: blur(10px);
                 text-align: center;
+
                 .button {
                     width: 100%;
                     padding: 16px 20px;
                 }
             }
+
             h5 {
                 margin-bottom: 18px;
             }
+
             p {
                 margin-bottom: 32px;
             }
-         
+
         }
 
         h2 {
@@ -149,6 +171,7 @@
             margin-bottom: 6px;
         }
     }
+
     &Status {
         width: calc(33.3% - 16px);
         margin: 8px;
@@ -160,20 +183,24 @@
         background: radial-gradient(82.87% 517.52% at 17.05% 65.16%, rgba(37, 76, 88, 0.91) 0%, rgba(84, 50, 39, 0.91) 100%);
         backdrop-filter: blur(10px);
         letter-spacing: 0.5px;
+
         &__icon {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 62px;
             height: 62px;
+
             img {
                 width: 100%;
             }
         }
+
         p {
             margin-bottom: 8px;
         }
     }
+
     &Item {
         border-radius: 20px;
         width: calc(50% - 8px);
@@ -271,10 +298,12 @@
                     font-weight: 500;
                 }
             }
+
             &-icons {
                 display: flex;
                 align-self: center;
             }
+
             a {
                 display: flex;
                 align-items: center;
@@ -283,6 +312,7 @@
                 font-weight: 400;
                 color: #5FC486;
                 letter-spacing: 0.5px;
+
                 svg {
                     width: 14px;
                     height: 14px;
@@ -291,6 +321,7 @@
                     stroke: #5FC486;
                 }
             }
+
             h6 {
                 font-weight: 500;
                 font-size: 15px;
@@ -358,10 +389,12 @@
                 font-size: 14px;
                 line-height: 18px;
                 font-weight: 500;
+
                 b {
                     color: #5EBB81;
                     font-weight: 400;
                 }
+
                 &.sm {
                     text-decoration: underline;
                     font-weight: 400;
@@ -486,16 +519,19 @@
                 }
             }
         }
+
         &__health {
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 10px 22px 22px 16px;
+
             &-inner {
                 display: flex;
                 align-items: center;
                 width: calc(100% - 40px);
             }
+
             &-bar {
                 margin-left: 9px;
                 height: 10px;
@@ -504,10 +540,12 @@
                 width: 80%;
                 max-width: 240px;
             }
+
             p {
                 font-size: 13px;
                 line-height: 16px;
                 opacity: .7;
+
                 &:last-child {
                     opacity: 1;
                     text-align: end;
@@ -515,6 +553,7 @@
                 }
             }
         }
+
         .button {
             padding: 16px 22px;
             margin-right: 20px;
@@ -537,9 +576,11 @@
             }
         }
     }
+
     &Info {
         width: calc(40% - 20px);
     }
+
     &Wallet {
         width: 30%;
     }
@@ -551,9 +592,11 @@
         &.big {
             padding: 30px 0 90px;
         }
+
         &__inner {
             &-main {
                 flex-wrap: wrap;
+
                 .dashItem {
                     &__row {
                         order: 1;
@@ -563,26 +606,31 @@
                 }
             }
         }
+
         &Info {
             width: 100%;
             order: 3;
             margin-top: 20px;
 
         }
-        &Wallet{
+
+        &Wallet {
             width: calc(50% - 15px);
             order: 2;
         }
+
         &Status {
             padding: 20px;
             border-radius: 15px;
             margin: 4px;
             width: calc(33.3% - 8px);
+
             &__icon {
                 width: 50px;
                 height: 50px;
             }
         }
+
         &Item {
             &__row {
                 &.big {
@@ -673,11 +721,24 @@
     .dash {
         padding: 10px 0 60px;
 
+        &Wallet {
+            width: calc(50% - 8px);
+        }
+
         &__inner {
+            &-main {
+                .dashItem {
+                    &__row {
+                        width: calc(50% - 8px);
+                    }
+                }
+            }
+
             &-status {
                 margin-bottom: 20px;
                 padding: 4px 6px;
             }
+
             &-header {
                 margin-bottom: 40px;
             }
@@ -690,25 +751,30 @@
                 margin-bottom: 10px;
             }
         }
+
         &Status {
             padding: 12px;
             border-radius: 12px;
             margin: 3px;
             width: calc(33.3% - 6px);
+
             &__icon {
                 width: 40px;
                 height: 40px;
             }
+
             h4 {
                 font-size: 18px;
                 line-height: 22px;
             }
+
             p {
                 font-size: 12px;
                 line-height: 16px;
                 margin-bottom: 5px;
             }
         }
+
         &Item {
             &__row {
                 &.big {
@@ -835,18 +901,22 @@
             &-header {
                 margin-bottom: 25px;
             }
+
             &-tab {
                 margin-bottom: 28px;
                 padding-top: 20px;
+
                 &-buttons {
                     margin-bottom: 30px;
                 }
+
                 &-connect {
                     .button {
                         padding: 14px 20px;
                     }
                 }
             }
+
             h2 {
                 margin-bottom: 6px;
             }
@@ -855,25 +925,30 @@
                 margin-bottom: 4px;
             }
         }
+
         &Status {
             padding: 10px;
             border-radius: 10px;
             margin: 3px;
             width: calc(33.3% - 6px);
+
             &__icon {
                 width: 30px;
                 height: 30px;
             }
+
             h4 {
                 font-size: 15px;
                 line-height: 19px;
             }
+
             p {
                 font-size: 10px;
                 line-height: 13px;
                 margin-bottom: 3px;
             }
         }
+
         &Item {
             width: calc(50% - 5px);
             border-radius: 16px;
@@ -915,32 +990,50 @@
 // 650px
 @mixin dash-sm-md-extra {
     .dash {
+        &__inner {
+            &-main {
+                .dashItem {
+                    &__row {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        &wallet {
+            width: 100%;
+        }
         &Status {
             padding: 15px;
             border-radius: 12px;
             margin: 5px;
             width: 100%;
+
             &__icon {
                 width: 50px;
                 height: 50px;
             }
+
             h4 {
                 font-size: 18px;
                 line-height: 24px;
             }
+
             p {
                 font-size: 14px;
                 line-height: 18px;
                 margin-bottom: 6px;
             }
         }
+
         &Item {
             width: 100%;
             margin-bottom: 20px;
             min-height: 140px;
-            &:nth-child(n + 3){
+
+            &:nth-child(n + 3) {
                 margin-top: 0;
             }
+
             &:last-child {
                 margin-bottom: 0;
             }
@@ -980,24 +1073,30 @@
 @mixin dash-xsm-sm {
     .dash {
         padding: 10px 0 40px;
+
         &__inner {
             &-tab {
                 margin-bottom: 20px;
                 padding-top: 10px;
+
                 &-buttons {
                     margin-bottom: 25px;
                 }
+
                 &-connect {
                     padding: 22px 16px 16px;
                 }
+
                 h5 {
                     margin-bottom: 12px;
                 }
+
                 p {
                     margin-bottom: 20px;
                 }
             }
         }
+
         &Item {
             &__row {
                 &.big {
@@ -1038,6 +1137,7 @@
         &Item {
             margin-bottom: 15px;
             min-height: 110px;
+
             &__row {
                 &.buy {
                     .dashItem {

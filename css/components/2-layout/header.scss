@@ -31,6 +31,10 @@
       align-items: center;
       font-size: 42px;
       line-height: 100%;
+      width: 130px;
+      img {
+        width: 100%;
+      }
     }
     &-buttons {
       display: flex;
@@ -46,7 +50,9 @@
 @mixin header-lg-xlg {
     .header {
       &__inner {
-
+        &-logo {
+          width: 120px;
+        }
       }
     }
 }
@@ -54,8 +60,10 @@
 @mixin header-xsm-sm {
     .header {
       &__inner {
+        padding: 15px 0;
         &-logo {
           font-size: 30px;
+          width: 100px;
         }
         &-buttons {
           .button {

@@ -2,19 +2,10 @@
 @include xxxxlg-xxxxxlg {
     // @include hero-xxxxlg-xxxxxlg;
 }
-// 1380px
-@include xxxlg-xxxxlg {
-    @include hero-xxxlg-xxxxlg;
-}
-// 1250px
-@include xlg-xxlg-extra {
-    @include hero-xlg-xxlg-extra;
-}
-// 1180px
+
+// 1440px
 @include xlg-xxlg {
-    .auto__container {
-        padding: 0 30px;
-    }
+
     h1 {
         font-size: 65px;
         line-height: 75.7%;
@@ -40,13 +31,33 @@
         font-size: 20px;
         line-height: 24px;
     }
-    
+    p {
+        &.big {
+            font-size: 17px;
+            line-height: 23px;
+        }
+    }
     @include hero-xlg-xxlg;
-    @include feature-xlg-xxlg;
     @include intro-xlg-xxlg;
     @include info-xlg-xxlg;
     @include achieve-xlg-xxlg;
     @include dash-xlg-xxlg;
+
+}
+// 1240px 
+@include lg-xlg-extra {
+    .auto__container {
+        padding: 0 30px;
+    }
+    h1 {
+        font-size: 55px;
+        line-height: 75.7%;
+    }
+    @include info-lg-xlg-extra;
+    @include hero-lg-xlg-extra;
+    @include intro-lg-xlg-extra;
+    @include achieve-lg-xlg-extra;
+    @include feature-lg-xlg-extra;
 
 }
 // 1024px
@@ -54,19 +65,18 @@
     ::-webkit-scrollbar{
         display: none;
     }
+    .main {
+        padding-top: 86.63px;
+    }
     @include header-lg-xlg;
     @include nav-lg-xlg;
-    @include hero-lg-xlg;
     @include feature-lg-xlg;
-    @include intro-lg-xlg;
-    @include info-lg-xlg;
-    @include achieve-lg-xlg;
 
 }
 // 930px
 @include md-lg {
     h1 {
-        font-size: 50px;
+        font-size: 44px;
     }
     h2 {
         font-size: 30px;
@@ -104,8 +114,8 @@
         }
     
         &.big {
-            font-size: 18px;
-            line-height: 26px;
+            font-size: 16px;
+            line-height: 22px;
         }
     }
     @include hero-md-lg;
@@ -169,7 +179,7 @@
         line-height: 22px;
     }
     .main {
-        padding-top: 66px;
+        padding-top: 72.19px;
     }
     @include header-xsm-sm;
     @include nav-xsm-sm;

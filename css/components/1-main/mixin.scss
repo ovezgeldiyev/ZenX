@@ -114,12 +114,12 @@
   }
 }
 @mixin lg-xlg-extra {
-  @media (max-width: 1080px) {
+  @media (max-width: 1240px) {
     @content;
   }
 }
 @mixin xlg-xxlg {
-  @media (max-width: 1180px) {
+  @media (max-width: 1440px) {
     @content;
   }
 }

@@ -171,7 +171,7 @@ p.big {
 
 .main {
   overflow: hidden;
-  padding-top: 81.6px;
+  padding-top: 90.85px;
   position: relative;
   min-height: 100vh;
 }
@@ -391,6 +391,10 @@ p.big {
           align-items: center;
   font-size: 42px;
   line-height: 100%;
+  width: 130px;
+}
+.header__inner-logo img {
+  width: 100%;
 }
 .header__inner-buttons {
   display: -webkit-box;
@@ -651,6 +655,7 @@ p.big {
           align-items: center;
   max-width: 890px;
   margin: 0 auto;
+  width: 75%;
 }
 .hero__inner-image img {
   width: 100%;
@@ -842,7 +847,7 @@ p.big {
 .introIcon {
   width: 7%;
   position: absolute;
-  bottom: 0;
+  bottom: 3%;
   right: 8%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1020,8 +1025,8 @@ p.big {
   right: 0;
   width: 40%;
   max-width: 580px;
-  -webkit-transform: translate(15%, 15%);
-          transform: translate(15%, 15%);
+  -webkit-transform: translate(13%, 15%);
+          transform: translate(13%, 15%);
 }
 .info__inner-image img {
   width: 100%;
@@ -1790,11 +1795,7 @@ p.big {
   width: 30%;
 }
 
-@media (max-width: 1180px) {
-  .auto__container {
-    padding: 0 30px;
-  }
-
+@media (max-width: 1440px) {
   h1 {
     font-size: 65px;
     line-height: 75.7%;
@@ -1824,22 +1825,9 @@ p.big {
     line-height: 24px;
   }
 
-  .feature {
-    padding: 30px 0 80px;
-  }
-  .feature__inner-title {
-    margin-bottom: 40px;
-  }
-  .feature__inner h2 {
-    margin-bottom: 12px;
-  }
-  .featureItem {
-    padding: 24px 18px;
-    border-radius: 18px;
-  }
-  .featureItem h6 {
-    font-size: 16px;
-    line-height: 24px;
+  p.big {
+    font-size: 17px;
+    line-height: 23px;
   }
 
   .intro {
@@ -1850,13 +1838,20 @@ p.big {
     padding: 90px 0;
   }
   .infoIcon {
+    width: 9%;
     left: 1%;
     min-width: 80px;
   }
   .info__inner {
     padding-left: 110px;
   }
+  .info__inner-image {
+    width: 34%;
+    -webkit-transform: translateY(15%);
+            transform: translateY(15%);
+  }
   .info__inner-content {
+    width: 68%;
     padding: 26px 45px 30px 30px;
   }
   .info__inner h2 {
@@ -1958,9 +1953,92 @@ p.big {
     padding: 12px 30px;
   }
 }
+@media (max-width: 1240px) {
+  .auto__container {
+    padding: 0 30px;
+  }
+
+  h1 {
+    font-size: 55px;
+    line-height: 75.7%;
+  }
+
+  .info {
+    padding: 90px 0 70px;
+  }
+  .infoIcon {
+    top: 0;
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+  }
+  .info__inner {
+    padding: 0;
+  }
+  .info__inner-content {
+    width: 70%;
+  }
+  .info__inner-image {
+    width: 37%;
+    bottom: unset;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+  .intro {
+    padding: 80px 0 20px;
+  }
+  .introIcon {
+    bottom: 0;
+  }
+  .intro__inner-image {
+    width: calc(45% - 15px);
+    padding-left: 0;
+  }
+  .intro__inner-content {
+    width: calc(55% - 15px);
+  }
+
+  .achieve {
+    padding: 60px 0 100px;
+  }
+  .achieve__inner-info {
+    width: calc(45% - 10px);
+    padding-left: 16px;
+  }
+  .achieve__inner-content {
+    width: calc(55% - 10px);
+  }
+
+  .feature {
+    padding: 30px 0 80px;
+  }
+  .feature__inner-title {
+    margin-bottom: 40px;
+  }
+  .feature__inner h2 {
+    margin-bottom: 12px;
+  }
+  .featureItem {
+    padding: 24px 18px;
+    border-radius: 18px;
+  }
+  .featureItem h6 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 @media (max-width: 1024px) {
   ::-webkit-scrollbar {
     display: none;
+  }
+
+  .main {
+    padding-top: 86.63px;
+  }
+
+  .header__inner-logo {
+    width: 120px;
   }
 
   body.active {
@@ -1969,10 +2047,10 @@ p.big {
 
   .nav {
     position: fixed;
-    top: 81.6px;
+    top: 86.63px;
     left: 0;
     width: 100%;
-    height: calc(100% - 81.6px);
+    height: calc(100% - 86.63px);
     z-index: 9;
     background: rgba(0, 0, 0, 0.4);
     -webkit-transform: translateX(100%);
@@ -2122,50 +2200,10 @@ p.big {
   .featureItem p {
     margin-bottom: 10px;
   }
-
-  .intro {
-    padding: 80px 0 20px;
-  }
-  .intro__inner-image {
-    width: calc(45% - 15px);
-    padding-left: 0;
-  }
-  .intro__inner-content {
-    width: calc(55% - 15px);
-  }
-
-  .info {
-    padding: 90px 0 70px;
-  }
-  .infoIcon {
-    top: 0;
-    -webkit-transform: translateY(-30%);
-            transform: translateY(-30%);
-  }
-  .info__inner {
-    padding: 0;
-  }
-  .info__inner-image {
-    bottom: unset;
-    top: 50%;
-    -webkit-transform: translate(10%, -50%);
-            transform: translate(10%, -50%);
-  }
-
-  .achieve {
-    padding: 60px 0 100px;
-  }
-  .achieve__inner-info {
-    width: calc(45% - 10px);
-    padding-left: 16px;
-  }
-  .achieve__inner-content {
-    width: calc(55% - 10px);
-  }
 }
 @media (max-width: 930px) {
   h1 {
-    font-size: 50px;
+    font-size: 44px;
   }
 
   h2 {
@@ -2206,8 +2244,8 @@ p.big {
     line-height: 22px;
   }
   p.big {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 22px;
   }
 
   .feature {
@@ -2298,6 +2336,12 @@ p.big {
 
   .dash {
     padding: 10px 0 60px;
+  }
+  .dashWallet {
+    width: calc(50% - 8px);
+  }
+  .dash__inner-main .dashItem__row {
+    width: calc(50% - 8px);
   }
   .dash__inner-status {
     margin-bottom: 20px;
@@ -2476,6 +2520,9 @@ p.big {
 
   .hero {
     padding-top: 20px;
+  }
+  .hero__inner-image {
+    width: 95%;
   }
   .hero__inner h1 {
     margin-bottom: 16px;
@@ -2763,7 +2810,7 @@ p.big {
   }
 
   .achieve {
-    padding: 40px 0 60px;
+    padding: 60px 0;
   }
   .achieveIcon {
     bottom: -1%;
@@ -2808,6 +2855,12 @@ p.big {
     width: 55px;
   }
 
+  .dash__inner-main .dashItem__row {
+    width: 100%;
+  }
+  .dashwallet {
+    width: 100%;
+  }
   .dashStatus {
     padding: 15px;
     border-radius: 12px;
@@ -2918,19 +2971,23 @@ p.big {
   }
 
   .main {
-    padding-top: 66px;
+    padding-top: 72.19px;
   }
 
+  .header__inner {
+    padding: 15px 0;
+  }
   .header__inner-logo {
     font-size: 30px;
+    width: 100px;
   }
   .header__inner-buttons .button {
     display: none;
   }
 
   .nav {
-    top: 66px;
-    height: calc(100% - 66px);
+    top: 72.19px;
+    height: calc(100% - 72.19px);
   }
   .nav__inner .button {
     display: -webkit-box;

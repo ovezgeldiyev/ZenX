@@ -68,7 +68,7 @@
             align-items: center;
             max-width: 890px;
             margin: 0 auto;
-
+            width: 75%;
             img {
                 width: 100%;
             }
@@ -91,23 +91,13 @@
     }
 }
 
-// 1380px
-@mixin hero-xxxlg-xxxxlg {
-    .hero {}
-}
-
-// 1250px
-@mixin hero-xlg-xxlg-extra {
-    .hero {}
-}
-
-// 1180px
+// 1440px
 @mixin hero-xlg-xxlg {
     .hero {}
 }
 
-// 1024px
-@mixin hero-lg-xlg {
+// 1240px
+@mixin hero-lg-xlg-extra {
     .hero {}
 }
 
@@ -122,6 +112,9 @@
         padding-top: 20px;
 
         &__inner {
+            &-image {
+                width: 95%;
+            }
             h1 {
                 margin-bottom: 16px;
             }
@@ -272,8 +265,8 @@
     .feature {}
 }
 
-// 1180px
-@mixin feature-xlg-xxlg {
+// 1240px
+@mixin feature-lg-xlg-extra {
     .feature {
         padding: 30px 0 80px;
 
@@ -519,7 +512,7 @@
     &Icon {
         width: 7%;
         position: absolute;
-        bottom: 0;
+        bottom: 3%;
         right: 8%;
         display: flex;
         justify-content: center;
@@ -609,17 +602,20 @@
     .intro {}
 }
 
-// 1180px
+// 1440px
 @mixin intro-xlg-xxlg {
     .intro {
         padding: 100px 0 20px;
     }
 }
 
-// 1024px
-@mixin intro-lg-xlg {
+// 1240px
+@mixin intro-lg-xlg-extra {
     .intro {
         padding: 80px 0 20px;
+        &Icon {
+            bottom: 0;
+        }
         &__inner {
             &-image {
                 width: calc(45% - 15px);
@@ -782,7 +778,7 @@
             right: 0;
             width: 40%;
             max-width: 580px;
-            transform: translate(15%, 15%);
+            transform: translate(13%, 15%);
 
             img {
                 width: 100%;
@@ -810,17 +806,23 @@
     .info {}
 }
 
-// 1180px
+// 1440px
 @mixin info-xlg-xxlg {
     .info {
         padding: 90px 0;
         &Icon {
+            width: 9%;
             left: 1%;
             min-width: 80px;
         }
         &__inner {
             padding-left: 110px;
+            &-image {
+                width: 34%;
+                transform: translateY(15%);
+            }
             &-content {
+                width: 68%;
                 padding: 26px 45px 30px 30px;
             }
             h2 {
@@ -830,8 +832,8 @@
     }
 }
 
-// 1024px
-@mixin info-lg-xlg {
+// 1240px
+@mixin info-lg-xlg-extra {
     .info {
         padding: 90px 0 70px;
         &Icon {
@@ -840,10 +842,14 @@
         }
         &__inner {
             padding: 0;
+            &-content {
+                width: 70%;
+            }
             &-image {
+                width: 37%;
                 bottom: unset;
                 top: 50%;
-                transform: translate(10%, -50%);
+                transform: translateY(-50%);
             }
         }
     }
@@ -1097,15 +1103,15 @@
     .achieve {}
 }
 
-// 1180px
+// 1440px
 @mixin achieve-xlg-xxlg {
     .achieve {
         padding: 70px 0 120px;
     }
 }
 
-// 1024px
-@mixin achieve-lg-xlg {
+// 1240px
+@mixin achieve-lg-xlg-extra {
     .achieve {
         padding: 60px 0 100px;
         &__inner {
@@ -1185,7 +1191,7 @@
 // 650px
 @mixin achieve-sm-md-extra {
     .achieve {
-        padding: 40px 0 60px;
+        padding: 60px 0;
         &Icon {
             bottom: -1%;
         }
