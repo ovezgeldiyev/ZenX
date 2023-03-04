@@ -409,6 +409,9 @@
                 &.base {
                     text-decoration: unset;
                 }
+                &:first-child {
+                    margin-right: 10px;
+                }
             }
         }
 

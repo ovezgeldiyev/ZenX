@@ -1632,6 +1632,9 @@ p.big {
 .dashItem__info p.base {
   text-decoration: unset;
 }
+.dashItem__info p:first-child {
+  margin-right: 10px;
+}
 .dashItem__bar {
   display: -webkit-box;
   display: -ms-flexbox;
