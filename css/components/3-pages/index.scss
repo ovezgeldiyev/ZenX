@@ -98,7 +98,14 @@
 
 // 1240px
 @mixin hero-lg-xlg-extra {
-    .hero {}
+    .hero {
+        &__inner {
+            &-image {
+                width: 70%;
+                max-width: 740px;
+            }
+        }
+    }
 }
 
 // 930px
@@ -113,7 +120,7 @@
 
         &__inner {
             &-image {
-                width: 95%;
+                width: 80%;
             }
             h1 {
                 margin-bottom: 16px;

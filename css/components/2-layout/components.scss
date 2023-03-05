@@ -5,6 +5,7 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     font-family: $changa;
+    user-select: none;
     span {
         background: linear-gradient(225deg, rgba(255, 193, 136, 0.7) 14.89%, rgba(103, 131, 148, 0.7) 85.85%);
         -webkit-background-clip: text;
@@ -18,7 +19,7 @@ h2 {
     font-weight: 700;
     font-size: 44px;
     line-height: 48px;
-
+    user-select: none;
     &.big {
         font-weight: 700;
         font-size: 48px;

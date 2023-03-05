@@ -5,9 +5,11 @@
 
 // 1440px
 @include xlg-xxlg {
-
+    .auto__container {
+        max-width: 1140px;
+    }
     h1 {
-        font-size: 65px;
+        font-size: 60px;
         line-height: 75.7%;
     }
     h2 {
@@ -48,9 +50,10 @@
 @include lg-xlg-extra {
     .auto__container {
         padding: 0 30px;
+        max-width: 1024px;
     }
     h1 {
-        font-size: 55px;
+        font-size: 50px;
         line-height: 75.7%;
     }
     @include info-lg-xlg-extra;
@@ -76,7 +79,7 @@
 // 930px
 @include md-lg {
     h1 {
-        font-size: 44px;
+        font-size: 42px;
     }
     h2 {
         font-size: 30px;

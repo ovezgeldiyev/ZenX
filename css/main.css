@@ -93,6 +93,10 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   font-family: "Changa", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 h1 span {
   background: linear-gradient(225deg, rgba(255, 193, 136, 0.7) 14.89%, rgba(103, 131, 148, 0.7) 85.85%);
@@ -106,6 +110,10 @@ h2 {
   font-weight: 700;
   font-size: 44px;
   line-height: 48px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 h2.big {
   font-weight: 700;
@@ -1799,8 +1807,12 @@ p.big {
 }
 
 @media (max-width: 1440px) {
+  .auto__container {
+    max-width: 1140px;
+  }
+
   h1 {
-    font-size: 65px;
+    font-size: 60px;
     line-height: 75.7%;
   }
 
@@ -1959,10 +1971,11 @@ p.big {
 @media (max-width: 1240px) {
   .auto__container {
     padding: 0 30px;
+    max-width: 1024px;
   }
 
   h1 {
-    font-size: 55px;
+    font-size: 50px;
     line-height: 75.7%;
   }
 
@@ -1986,6 +1999,11 @@ p.big {
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
+  }
+
+  .hero__inner-image {
+    width: 70%;
+    max-width: 740px;
   }
 
   .intro {
@@ -2206,7 +2224,7 @@ p.big {
 }
 @media (max-width: 930px) {
   h1 {
-    font-size: 44px;
+    font-size: 42px;
   }
 
   h2 {
@@ -2525,7 +2543,7 @@ p.big {
     padding-top: 20px;
   }
   .hero__inner-image {
-    width: 95%;
+    width: 80%;
   }
   .hero__inner h1 {
     margin-bottom: 16px;
