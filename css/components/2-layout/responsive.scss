@@ -61,6 +61,7 @@
     @include intro-lg-xlg-extra;
     @include achieve-lg-xlg-extra;
     @include feature-lg-xlg-extra;
+    @include dash-lg-xlg-extra;
 
 }
 // 1024px
@@ -74,6 +75,7 @@
     @include header-lg-xlg;
     @include nav-lg-xlg;
     @include feature-lg-xlg;
+    @include dash-lg-xlg;
 
 }
 // 930px
@@ -190,6 +192,8 @@
     @include feature-xsm-sm;
     @include dash-xsm-sm;
     @include footer-xsm-sm;
+
+    @include tradeGraph-xsm-sm;
 
 }
 // 440px
